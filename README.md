@@ -1,4 +1,3 @@
-Here is the complete `README.md` file for your DOCX to PDF converter project:
 # DOCX to PDF Converter
 
 A simple web application for converting DOCX files to PDF format. This project is built using Python and Streamlit, allowing users to upload DOCX files and convert them to high-quality PDFs. Additional features include the ability to add password protection to the converted PDFs.
