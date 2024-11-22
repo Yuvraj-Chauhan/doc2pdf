@@ -1,12 +1,21 @@
 from pikepdf import Pdf
-from fpdf import FPDF
+import aspose.words as aw
 from pathlib import Path
 
+def convert_to_pdf(docx_path):
+    pdf_path = Path(docx_path).with_suffix(".pdf")
+    try:
+        doc = aw.Document(str(docx_path))
+        doc.save(str(pdf_path), aw.SaveFormat.PDF)
+        return pdf_path
+    except Exception as e:
+        raise RuntimeError(f"Error converting DOCX to PDF: {e}")
+
+'''
 from docx import Document
 from reportlab.lib.pagesizes import letter
 from reportlab.pdfgen import canvas
 from pathlib import Path
-
 def convert_to_pdf(docx_path):
     pdf_path = Path(docx_path).with_suffix(".pdf")
     doc = Document(docx_path)
@@ -39,7 +48,9 @@ def convert_to_pdf(docx_path):
     c.save()
 
     return pdf_path
-
+'''
+# from fpdf import FPDF
+# from pathlib import Path
 # def convert_to_pdf(docx_path):
 #     pdf_path = Path(docx_path).with_suffix(".pdf")
 #     pdf = FPDF()
