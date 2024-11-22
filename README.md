@@ -13,11 +13,9 @@ A simple web application for converting DOCX files to PDF format. This project i
 ## Technologies Used
 
 - **Streamlit**: A Python library for building interactive web applications.
+- **Aspose.Words**: A commercial library that provides high-fidelity DOCX to PDF conversion.
 - **FPDF**: A Python library used for generating PDFs from DOCX files.
 - **python-docx**: A Python library for working with DOCX files.
-- **pypandoc** (optional): A library that can be used for high-quality DOCX to PDF conversion using Pandoc.
-- **Aspose.Words** (optional): A commercial library that provides high-fidelity DOCX to PDF conversion.
-- **LibreOffice/Microsoft Word Automation** (optional): Alternatives for Windows users to automate DOCX to PDF conversion for better quality.
 
 ## Installation
 
@@ -80,9 +78,7 @@ This will launch the web application in your browser where you can upload DOCX f
 
 ## Optional Configurations
 
-- **High-Quality Conversion**: For better formatting retention, you can enable `pypandoc` or `Aspose.Words` for high-quality conversion. These can be used for better handling of complex DOCX formatting.
-  
-- **Windows-Only Conversion (LibreOffice or Word)**: On Windows, for better conversion quality, you can install `pywin32` and configure LibreOffice or Microsoft Word for the conversion process.
+- **High-Quality Conversion**: For better formatting retention, you can enable `Aspose.Words` for high-quality conversion. These can be used for better handling of complex DOCX formatting.
 
 ## Example Use Case
 
@@ -91,21 +87,16 @@ This will launch the web application in your browser where you can upload DOCX f
 - **Optional**: Add password protection to the PDF.
 - **Download** the PDF and share it or save it for future reference.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## Acknowledgments
 
 - **Streamlit**: For providing a simple and powerful framework for building web applications.
+- **Aspose.Words**: For commercial-grade DOCX to PDF conversion.
 - **FPDF**: For generating PDFs from DOCX files.
 - **python-docx**: For reading DOCX files and extracting content.
-- **Pandoc**: A powerful document converter for high-quality conversions.
-- **Aspose.Words**: For commercial-grade DOCX to PDF conversion.
 
 ## Troubleshooting
 
-- **Poor Conversion Quality**: If the generated PDF is of poor quality or formatting is lost, try using the `pypandoc` or `Aspose.Words` library for better conversion quality.
+- **Poor Conversion Quality**: If the generated PDF is of poor quality or formatting is lost, try using the `Aspose.Words` library for better conversion quality.
 - **Missing Libraries**: Ensure that all required libraries are installed. Use the `pip install -r requirements.txt` command to install them.
 
 ---
@@ -132,6 +123,3 @@ Feel free to modify and extend the application to fit your needs. Happy coding!
 2. **Installation Instructions**: Guides users through setting up the project on their local machine or server.
 3. **Usage**: Explains how to use the app through the web interface.
 4. **Optional Configurations**: Details on optional settings like using higher-quality libraries or automation options.
-5. **License & Acknowledgments**: Acknowledges the libraries and frameworks used in the project.
-
-This README provides clear instructions for setting up, running, and using your application, with some optional configurations for users who need higher-quality PDF conversions. Feel free to tweak or add sections as your project evolves!
