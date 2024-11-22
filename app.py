@@ -4,7 +4,7 @@ from utils.pdf_generator import convert_to_pdf, add_password_protection
 
 # Set the page title and icon for the browser tab
 st.set_page_config(
-    page_title="DOCX to PDF Converter",  # Title of the page
+    page_title="docx2pdf Converter",  # Title of the page
     page_icon=":page_facing_up:",  # You can use an emoji or an icon path
     layout="centered"  # This centers the content
 )
